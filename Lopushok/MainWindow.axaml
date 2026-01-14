@@ -4,6 +4,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Lopushok.MainWindow"
-        Title="Lopushok">
-    Welcome to Avalonia!
+        x:CompileBindings="False"
+        Title="Вывод списка продуктов"
+		Icon="Icon/lopushok.png">
+
+
+	<DockPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Top">
+			<StackPanel Margin="5">
+				<TextBox Width="200" Watermark="Поиск..." Name="SearchBox" Margin="5" KeyUp="SearchBox_KeyUp"/>
+			</StackPanel>
+
+			<StackPanel Margin="5">
+				<TextBlock Text="Сортировка" FontWeight="Bold"/>
+				<ComboBox Width="200" SelectionChanged="SortBox_SelectionChanged" Name="SortBox">
+					<ComboBoxItem Content="Без сортировки"/>
+					<ComboBoxItem Content="Наименование по возр."/>
+					<ComboBoxItem Content="Наименование по убыв."/>
+					<ComboBoxItem Content="Номер цеха по возр."/>
+					<ComboBoxItem Content="Номер цеха по убыв."/>
+					<ComboBoxItem Content="Стоимость по возр."/>
+					<ComboBoxItem Content="Стоимость по убыв."/>
+				</ComboBox>
+			</StackPanel>
+
+			<StackPanel Margin="5">
+				<TextBlock Text="Фильтрация по типу" FontWeight="Bold"/>
+				<ComboBox Name="FilterBox" Width="200" SelectionChanged="FilterBox_SelectionChanged"/>
+			</StackPanel>
+		</StackPanel>
+
+	<ListBox Name="ProductsBox" ItemsSource="{Binding Products}">
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<UniformGrid Columns="1"/>
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+						<DockPanel Margin="5">
+							<Image Source="{Binding GetImage}" Height="80" Width="80" DockPanel.Dock="Left" Margin="5"/>
+
+							<StackPanel VerticalAlignment="Top" Margin="10,0,0,0">
+								<TextBlock FontSize="14">
+									<Run Text="{Binding Producttype.Title}" />
+									<Run Text=" | " />
+									<Run Text="{Binding Title}" />
+								</TextBlock>
+
+								<TextBlock Margin="0,5,0,0" FontSize="12">
+									<Run Text="Артикул: " />
+									<Run Text="{Binding Articlenumber}" />
+								</TextBlock>
+
+								<TextBlock Text="Материалы:" Margin="0,5,0,0" FontSize="12"/>
+
+								<ItemsControl ItemsSource="{Binding Productmaterials}">
+									<ItemsControl.ItemTemplate>
+										<DataTemplate>
+											<TextBlock Text="{Binding Material.Title}" />
+										</DataTemplate>
+									</ItemsControl.ItemTemplate>
+								</ItemsControl>
+							</StackPanel>
+						</DockPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</DockPanel>
 </Window>

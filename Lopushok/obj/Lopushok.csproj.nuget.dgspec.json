@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\desktop\\Lopushok\\Lopushok\\Lopushok.csproj": {}
+    "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\desktop\\Lopushok\\Lopushok\\Lopushok.csproj": {
+    "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
         "projectName": "Lopushok",
-        "projectPath": "C:\\Users\\User\\desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\desktop\\Lopushok\\Lopushok\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
