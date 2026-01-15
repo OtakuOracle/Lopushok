@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Lopushok\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|c:\\users\\user\\desktop\\lopushok\\lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|c:\\users\\user\\desktop\\lopushok\\lopushok\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|c:\\users\\user\\desktop\\lopushok\\lopushok\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|c:\\users\\user\\desktop\\lopushok\\lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F112BD66-347E-4EE8-AE19-CFF67C83C6CC}|Lopushok\\Lopushok.csproj|c:\\users\\user\\desktop\\lopushok\\lopushok\\models\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Lopushok\\Models\\Productsale.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T11:12:53.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T11:12:53.999Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "Lopushok\\Models\\Productmaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T11:12:00.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T11:12:00.717Z"
             },
             {
               "$type": "Document",
@@ -100,12 +98,11 @@
               "RelativeToolTip": "Lopushok\\Models\\Producttype.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T11:09:53.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T11:09:53.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Lopushok\\Models\\Product.cs",
@@ -113,31 +110,30 @@
               "RelativeToolTip": "Lopushok\\Models\\Product.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwCcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T11:07:38.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T11:07:38.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml",
               "RelativeDocumentMoniker": "Lopushok\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml*",
-              "RelativeToolTip": "Lopushok\\MainWindow.axaml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml",
+              "RelativeToolTip": "Lopushok\\MainWindow.axaml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-13T18:13:39.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "Lopushok\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml.cs*",
-              "RelativeToolTip": "Lopushok\\MainWindow.axaml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAA4AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Lopushok\\MainWindow.axaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADwAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T18:13:22.069Z",
               "EditorCaption": ""
