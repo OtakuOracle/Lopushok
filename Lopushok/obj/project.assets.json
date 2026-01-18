@@ -337,6 +337,22 @@
           }
         }
       },
+      "DialogHost.Avalonia/0.8.1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
@@ -446,6 +462,19 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MessageBox.Avalonia/3.3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.5",
+          "DialogHost.Avalonia": "0.8.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/MsBox.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MsBox.Avalonia.dll": {}
         }
       },
       "MicroCom.Runtime/0.11.0": {
@@ -1951,6 +1980,21 @@
         "lib/netstandard2.0/Avalonia.X11.xml"
       ]
     },
+    "DialogHost.Avalonia/0.8.1": {
+      "sha512": "RLBOMqjJPgSmwe0i1pzX3Q7Pn0i4xE/E1b774krd4VyEkaorz1AYMdYQHyIfuhtQv5NntZyS0MuQbxJl/PhzBg==",
+      "type": "package",
+      "path": "dialoghost.avalonia/0.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dialoghost.avalonia.0.8.1.nupkg.sha512",
+        "dialoghost.avalonia.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/DialogHost.Avalonia.dll",
+        "lib/netstandard2.0/DialogHost.Avalonia.xml"
+      ]
+    },
     "HarfBuzzSharp/7.3.0.2": {
       "sha512": "0tCd6HyCmNsX/DniCp2b00fo0xPbdNwKOs9BxxyT8oOOuMlWjcSFwzONKyeckCKVBFEsbSmsAHPDTqxoSDwZMg==",
       "type": "package",
@@ -2141,6 +2185,19 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MessageBox.Avalonia/3.3.1.1": {
+      "sha512": "a0NocLvE0ipg0REevrMtilNI+ud+tFTJW7YrPtploeM93ew8S3Y6hEybqZ7W9q5Yqa9u+xOrOjAlG1lTihWhnQ==",
+      "type": "package",
+      "path": "messagebox.avalonia/3.3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/MsBox.Avalonia.dll",
+        "messagebox.avalonia.3.3.1.1.nupkg.sha512",
+        "messagebox.avalonia.nuspec"
       ]
     },
     "MicroCom.Runtime/0.11.0": {
@@ -4254,6 +4311,7 @@
       "Avalonia.Diagnostics >= 11.2.1",
       "Avalonia.Fonts.Inter >= 11.2.1",
       "Avalonia.Themes.Fluent >= 11.2.1",
+      "MessageBox.Avalonia >= 3.3.1.1",
       "Microsoft.EntityFrameworkCore >= 9.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.9",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
@@ -4266,11 +4324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\Lopushok.csproj",
       "projectName": "Lopushok",
-      "projectPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\Lopushok.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4329,6 +4387,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.2.1, )"
+          },
+          "MessageBox.Avalonia": {
+            "target": "Package",
+            "version": "[3.3.1.1, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

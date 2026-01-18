@@ -3,6 +3,7 @@ using Lopushok.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.ObjectModel;
+using Avalonia.Interactivity;
 
 
 namespace Lopushok;
@@ -107,5 +108,11 @@ public partial class MainWindow : Window
 
         FilterBox.ItemsSource = productTypes.OrderBy(product => product != "Все типы"); 
     }
-    
+    private void AddProduct_Click(object? sender, RoutedEventArgs e)
+    {
+        var addProductWindow = new AddProduct();
+        addProductWindow.Show();
+    }
+
+
 }

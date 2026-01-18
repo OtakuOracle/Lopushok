@@ -32,59 +32,65 @@
 				<TextBlock Text="Фильтрация по типу" FontWeight="Bold"/>
 				<ComboBox Name="FilterBox" Width="200" SelectionChanged="FilterBox_SelectionChanged"/>
 			</StackPanel>
+
+			<Button x:Name="AddProductButton"
+					Click="AddProduct_Click"
+					Content="Добавить продукцию"
+					Background="green"
+					Margin="10"/>
 		</StackPanel>
-		
-<ListBox Name="ProductsBox" ItemsSource="{Binding Products}">
-    <ListBox.ItemsPanel>
-        <ItemsPanelTemplate>
-            <UniformGrid Columns="1"/>
-        </ItemsPanelTemplate>
-    </ListBox.ItemsPanel>
-    <ListBox.ItemTemplate>
-        <DataTemplate>
-            <Border BorderThickness="1" BorderBrush="Black" Margin="5">
-                <Grid Margin="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/> 
-                        <ColumnDefinition Width="*"/>   
-                        <ColumnDefinition Width="Auto"/> 
-                    </Grid.ColumnDefinitions>
 
-                    <Image Source="{Binding GetImage}" Height="80" Width="80" Margin="5"/>
+		<ListBox Name="ProductsBox" ItemsSource="{Binding Products}">
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<UniformGrid Columns="1"/>
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+						<Grid Margin="5">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
 
-                    <StackPanel VerticalAlignment="Top" Margin="10,0,0,0" Grid.Column="1">
-                        <TextBlock FontSize="14">
-                            <Run Text="{Binding Producttype.Title}" />
-                            <Run Text=" | " />
-                            <Run Text="{Binding Title}" />
-                        </TextBlock>
+							<Image Source="{Binding GetImage}" Height="80" Width="80" Margin="5"/>
 
-                        <TextBlock Margin="0,5,0,0" FontSize="12">
-                            <Run Text="Артикул: " />
-                            <Run Text="{Binding Articlenumber}" />
-                        </TextBlock>
+							<StackPanel VerticalAlignment="Top" Margin="10,0,0,0" Grid.Column="1">
+								<TextBlock FontSize="14">
+									<Run Text="{Binding Producttype.Title}" />
+									<Run Text=" | " />
+									<Run Text="{Binding Title}" />
+								</TextBlock>
 
-                        <TextBlock Text="Материалы:" Margin="0,5,0,0" FontSize="12"/>
+								<TextBlock Margin="0,5,0,0" FontSize="12">
+									<Run Text="Артикул: " />
+									<Run Text="{Binding Articlenumber}" />
+								</TextBlock>
 
-                        <ItemsControl ItemsSource="{Binding Productmaterials}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Material.Title}" />
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </StackPanel>
+								<TextBlock Text="Материалы:" Margin="0,5,0,0" FontSize="12"/>
 
-                    <TextBlock Text="{Binding Mincostforagent, StringFormat='{}{0:C}'}" 
-                               VerticalAlignment="Top" 
-                               HorizontalAlignment="Right" 
-                               Margin="5,5,5,0" 
-                               FontSize="14"
-                               Grid.Column="2"/>
-                        </Grid>
-                    </Border>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+								<ItemsControl ItemsSource="{Binding Productmaterials}">
+									<ItemsControl.ItemTemplate>
+										<DataTemplate>
+											<TextBlock Text="{Binding MaterialsList}" />
+										</DataTemplate>
+									</ItemsControl.ItemTemplate>
+								</ItemsControl>
+							</StackPanel>
+
+							<TextBlock Text="{Binding Mincostforagent, StringFormat='{}{0:C}'}"
+									   VerticalAlignment="Top"
+									   HorizontalAlignment="Right"
+									   Margin="5,5,5,0"
+									   FontSize="14"
+									   Grid.Column="2"/>
+						</Grid>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 	</DockPanel>
 </Window>

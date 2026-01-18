@@ -1,0 +1,86 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:CompileBindings="false"
+        x:Class="Lopushok.AddProduct"
+        Title="Добавления продукта"
+		Icon="Icon/lopushok.png">
+
+
+	<Grid RowDefinitions="*, Auto" Margin="20">
+
+		<Grid Grid.Row="0"
+			  VerticalAlignment="Center"
+			  HorizontalAlignment="Center"
+			  ColumnDefinitions="Auto, 450"
+			  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+
+			<!-- Название -->
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="Название:" VerticalAlignment="Center" Margin="5"/>
+			<TextBox Grid.Row="0" Grid.Column="1" Name="TitleBox" Margin="5" Watermark="Введите название"/>
+
+			<!-- Артикул -->
+			<TextBlock Grid.Row="1" Grid.Column="0" Text="Артикул:" VerticalAlignment="Center" Margin="5"/>
+			<TextBox Grid.Row="1" Grid.Column="1" Name="ArticleBox" Margin="5" Watermark="Введите артикул"/>
+
+			<!-- Тип в выпадающем списке -->
+			<TextBlock Grid.Row="2" Grid.Column="0" Text="Тип продукта:" VerticalAlignment="Center" Margin="5"/>
+			<ComboBox Grid.Row="2" Grid.Column="1" Name="TypeBox" Margin="5" HorizontalAlignment="Stretch"/>
+
+			<!-- Количество человек -->
+			<TextBlock Grid.Row="3" Grid.Column="0" Text="Кол-во человек:" VerticalAlignment="Center" Margin="5"/>
+			<TextBox Grid.Row="3" Grid.Column="1" Name="PersonCountBox" Margin="5" Watermark="Введите количество человек"/>
+
+			<!-- Номер цеха -->
+			<TextBlock Grid.Row="4" Grid.Column="0" Text="Номер цеха:" VerticalAlignment="Center" Margin="5"/>
+			<TextBox Grid.Row="4" Grid.Column="1" Name="WorkShopNumberBox" Margin="5" Watermark="Введите номер цеха"/>
+
+			<!-- Минимальная стоимость -->
+			<TextBlock Grid.Row="5" Grid.Column="0" Text="Мин. стоимость:" VerticalAlignment="Center" Margin="5"/>
+			<TextBox Grid.Row="5" Grid.Column="1" Name="MinCostBox" Margin="5" Watermark="Введите стоимость"/>
+
+			<!-- Изображение -->
+			<TextBlock Grid.Row="6" Grid.Column="0" Text="Предпросмотр:" VerticalAlignment="Center" Margin="5"/>
+			<Border Grid.Row="6" Grid.Column="1"
+					BorderBrush="LightGray"
+					BorderThickness="1"
+					CornerRadius="5"
+					Margin="5"
+					HorizontalAlignment="Left"
+					Width="80" Height="80">
+				<Image Name="ImageBox" Stretch="UniformToFill"/>
+			</Border>
+
+		</Grid>
+
+		<Grid Grid.Row="1"
+			  ColumnDefinitions="Auto, *, Auto"
+			  Margin="0,20,0,0">
+
+			<Button Grid.Column="0"
+					Content="Назад"
+					Click="Back_Click"
+					Background="#00CC76"
+					Padding="15,7"/>
+
+			<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10">
+				<Button Content="Добавить изображение"
+						Click="AddImage_Click"
+						Background="#00CC76"
+						Padding="15,7"/>
+				<Button Content="Добавить продукт"
+						Click="AddProduct_Click"
+						Background="#00CC76"
+						Padding="15,7"
+						FontWeight="Bold"/>
+			</StackPanel>
+
+		</Grid>
+
+	</Grid>
+</Window>
+
+
+
