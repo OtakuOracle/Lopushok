@@ -56,14 +56,20 @@
 		</Grid>
 
 		<Grid Grid.Row="1"
-			  ColumnDefinitions="Auto, *, Auto"
-			  Margin="0,20,0,0">
+      ColumnDefinitions="Auto, *, Auto"
+      Margin="0,20,0,0">
 
-			<Button Grid.Column="0"
-					Content="Назад"
-					Click="Back_Click"
-					Background="#00CC76"
-					Padding="15,7"/>
+			<StackPanel Grid.Column="0" Orientation="Vertical" Spacing="10">
+				<Button Content="Добавить материал"
+						Click="AddMaterial_Click"
+						Background="#00CC76"
+						Padding="15,7"/>
+
+				<Button Content="Назад"
+						Click="Back_Click"
+						Background="#00CC76"
+						Padding="15,7"/>
+			</StackPanel>
 
 			<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10">
 				<Button Content="Добавить изображение"
@@ -78,9 +84,8 @@
 			</StackPanel>
 
 		</Grid>
-
 	</Grid>
 </Window>
 
 
-
+	

@@ -26,7 +26,8 @@ public partial class MainWindow : Window
 
         var allProducts = await context.Products
                                        .Include(product => product.Producttype)
-                                       .Include(product => product.Productmaterials) 
+                                       .Include(product => product.Productmaterials)
+                                       .ThenInclude(product => product.Material)
                                        .ToListAsync(); 
 
         Products.Clear();

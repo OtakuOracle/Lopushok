@@ -391,9 +391,6 @@ C:\Users\User\Desktop\Lopushok\Lopushok\bin\Debug\net8.0\products\paper_8.jpeg
 C:\Users\User\Desktop\Lopushok\Lopushok\bin\Debug\net8.0\products\paper_9.jpeg
 C:\Users\User\Desktop\Lopushok\Lopushok\obj\Debug\net8.0\Lopushok.sourcelink.json
 C:\Users\User\Desktop\Lopushok\Lopushok\bin\Debug\net8.0\products\paper_20.jpeg
-C:\Users\User\Desktop\Lopushok\Lopushok\obj\Debug\net8.0\Lopushok.dll
-C:\Users\User\Desktop\Lopushok\Lopushok\obj\Debug\net8.0\refint\Lopushok.dll
-C:\Users\User\Desktop\Lopushok\Lopushok\obj\Debug\net8.0\Lopushok.pdb
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\Lopushok.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\Avalonia\resources
@@ -592,3 +589,5 @@ C:\Users\User\Desktop\LopushokMoi\Lopushok\bin\Debug\net8.0\runtimes\browser\lib
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\Lopushok.csproj.Up2Date
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\Lopushok.genruntimeconfig.cache
 C:\Users\User\Desktop\LopushokMoi\Lopushok\obj\Debug\net8.0\ref\Lopushok.dll
+C:\Users\User\Desktop\Lopushok\Lopushok\bin\Debug\net8.0\DialogHost.Avalonia.dll
+C:\Users\User\Desktop\Lopushok\Lopushok\bin\Debug\net8.0\MsBox.Avalonia.dll

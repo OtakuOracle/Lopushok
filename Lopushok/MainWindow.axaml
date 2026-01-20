@@ -72,13 +72,10 @@
 
 								<TextBlock Text="Материалы:" Margin="0,5,0,0" FontSize="12"/>
 
-								<ItemsControl ItemsSource="{Binding Productmaterials}">
-									<ItemsControl.ItemTemplate>
-										<DataTemplate>
-											<TextBlock Text="{Binding MaterialsList}" />
-										</DataTemplate>
-									</ItemsControl.ItemTemplate>
-								</ItemsControl>
+								<TextBlock Text="{Binding MaterialList}"
+										   Margin="0,5,0,0"
+										   FontSize="11"
+										   TextWrapping="Wrap"/>
 							</StackPanel>
 
 							<TextBlock Text="{Binding Mincostforagent, StringFormat='{}{0:C}'}"

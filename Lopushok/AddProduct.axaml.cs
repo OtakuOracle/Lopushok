@@ -137,6 +137,12 @@ public partial class AddProduct : Window
         }
     }
 
+    private void AddMaterial_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        var addMaterialWindow = new AddMaterial();
+        addMaterialWindow.ShowDialog(this);
+    }
+
     private void Back_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         this.Close();

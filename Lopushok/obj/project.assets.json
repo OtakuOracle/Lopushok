@@ -4324,11 +4324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\Lopushok.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
       "projectName": "Lopushok",
-      "projectPath": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\Lopushok.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\Lopushok.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\LopushokMoi\\Lopushok\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Lopushok\\Lopushok\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,7 @@
 ﻿using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Lopushok.Models;
 
@@ -31,21 +32,33 @@ public partial class Product
         }
     }
 
-
-
     public int? Productionpersoncount { get; set; }
 
     public int? Productionworkshopnumber { get; set; }
 
     public decimal Mincostforagent { get; set; }
 
-
     public virtual ICollection<Productcosthistory> Productcosthistories { get; set; } = new List<Productcosthistory>();
 
     public virtual ICollection<Productmaterial> Productmaterials { get; set; } = new List<Productmaterial>();
-    //public string MaterialTitles { get; set; } = string.Empty;
 
     public virtual ICollection<Productsale> Productsales { get; set; } = new List<Productsale>();
 
     public virtual Producttype? Producttype { get; set; }
+
+    public string MaterialList
+    {
+        get
+        {
+            return string.Join(", ", Productmaterials.Select(Productmaterials => Productmaterials.Material.Title));
+        }
+    }
+    public IEnumerable<string> MaterialTitles
+    {
+        get
+        {
+            return Productmaterials.Select(Productmaterials => Productmaterials.Material.Title);
+        }
+    }
+
 }
