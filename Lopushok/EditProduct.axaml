@@ -1,0 +1,67 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:CompileBindings="false"
+        x:Class="Lopushok.EditProduct"
+        Title="Редактирование продукта"
+        Icon="Icon/lopushok.png"
+        Width="900"
+        Height="600">
+	
+	<Grid Margin="10">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="2*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<ScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto">
+			<StackPanel Spacing="8" Margin="5">
+				<TextBox Margin="2" Watermark="Название продукта" x:Name="TitleBox" HorizontalAlignment="Stretch"/>
+				<TextBox Margin="2" Watermark="Артикул продукта" x:Name="ArticleBox" HorizontalAlignment="Stretch"/>
+				<ComboBox Margin="2" x:Name="TypeBox" HorizontalAlignment="Stretch" />
+				<TextBox Margin="2" Watermark="Число человек производства" x:Name="PersonCountBox" HorizontalAlignment="Stretch"/>
+				<TextBox Margin="2" Watermark="Номер цеха" x:Name="WorkShopNumberBox" HorizontalAlignment="Stretch"/>
+				<TextBox Margin="2" Watermark="Минимальная стоимость для агента" x:Name="MinCostBox" HorizontalAlignment="Stretch"/>
+			</StackPanel>
+		</ScrollViewer>
+
+
+	<StackPanel Grid.Row="0" Grid.Column="1" Spacing="8" Margin="5">
+			<Border CornerRadius="6" BorderBrush="#DDD" BorderThickness="1" Padding="6" HorizontalAlignment="Center">
+				<Image Height="160" Width="160" x:Name="ImageBox" Stretch="Uniform"/>
+			</Border>
+
+			<Button Content="Добавить изображение" Click="AddImage_Click" HorizontalAlignment="Stretch" Margin="0,4,0,0" Background="#00CC76"/>
+
+			<TextBlock Text="Материалы:" FontWeight="Bold" Margin="0,8,0,4"/>
+			<Border BorderBrush="#DDD" BorderThickness="1" CornerRadius="6" Padding="6" Background="White">
+				<ListBox x:Name="MaterialsListBox" MaxHeight="300">
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8" Margin="2">
+								<TextBlock Text="{Binding Material.Title}" Width="150"/>
+								<TextBlock Text="{Binding Count, StringFormat='Количество: {0}'}" Width="100"/>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</Border>
+
+			<Button Content="Добавить материал" Click="AddMaterial_Click" HorizontalAlignment="Stretch" Margin="0,8,0,0" Background="#00CC76"/>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10" Margin="8">
+			<Button Content="Назад" Click="Back_Click" Margin="5" Background="#00CC76" Width="140"/>
+			<Button Content="Сохранить продукт" Click="AddProduct_Click" Margin="5" Background="#00CC76" Width="160"/>
+			<Button Content="Редактировать материалы" Click="AddMaterial_Click" Margin="5" Background="#00CC76" Width="180"/>
+			<Button Content="Удалить продукт" Click="DeleteProduct_Click" Margin="5" Background="#FF6B6B" Width="140"/>
+		</StackPanel>
+
+	</Grid>
+</Window>

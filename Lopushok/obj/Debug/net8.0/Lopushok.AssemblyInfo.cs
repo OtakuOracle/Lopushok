@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lopushok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07774c81a4bd854d66573ac35e8436a336f1218e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59855063f7c34c6e3b797d8c6fcf107e8277c730")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lopushok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lopushok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

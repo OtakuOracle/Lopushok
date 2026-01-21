@@ -46,9 +46,11 @@
 					<UniformGrid Columns="1"/>
 				</ItemsPanelTemplate>
 			</ListBox.ItemsPanel>
+
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+					<Border Background="Transparent" BorderThickness="1" BorderBrush="Black" Margin="5"
+							DoubleTapped="EditProduct_Click" Cursor="Hand">
 						<Grid Margin="5">
 							<Grid.ColumnDefinitions>
 								<ColumnDefinition Width="Auto"/>
@@ -91,3 +93,4 @@
 		</ListBox>
 	</DockPanel>
 </Window>
+	

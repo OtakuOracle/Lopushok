@@ -109,6 +109,18 @@ public partial class MainWindow : Window
 
         FilterBox.ItemsSource = productTypes.OrderBy(product => product != "Все типы"); 
     }
+
+    private void EditProduct_Click(object? sender, Avalonia.Input.TappedEventArgs e)
+    {
+        if (ProductsBox.SelectedItem is Product product)
+        {
+            var editProduct = new EditProduct (product);
+            editProduct.Show();
+            this.Close();
+        }
+
+    }
+
     private void AddProduct_Click(object? sender, RoutedEventArgs e)
     {
         var addProductWindow = new AddProduct();
